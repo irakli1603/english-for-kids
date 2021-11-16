@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>english-for-kids</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <header class="mt-2">
+            <nav class="navbar navbar-light bg-light">
+                <div class="container-fluid">
+                    <span class="navbar-toggler-icon" id="drawer"></span>
+                    <div class="form-check form-switch d-flex">
+                        <div class="mr-5">training</div>
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                        <div>game</div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <ul class="card-list mt-5" id="cardContainer">
+                
+            </ul>
+            <div class="score">
+
+            </div>
+            <div class="start-game-btn">
+                <button type="button" class="btn btn-primary btn-lg hidden" id="startGame">Start game</button>
+            </div>
+        </section>
+    </div>
+    <div id="overlay"></div>
+    <div class="drawer-menu">
+        <div id="close">
+            <img src="assets/img/cross.png"></img>
+        </div>
+        <ul>
+            <li class="drawer-item-container" id="">
+                <div>Category</div>
+            </li>
+            <li class="drawer-item-container" id="Action (set A)">
+                <img src="assets/img/thunder-bolt-hand-drawn-shape-outline.png"></img>
+                <div>Action (set A)</div>
+            </li>
+            <li class="drawer-item-container" id="Action (set B)">
+                <img src="assets/img/thunder-bolt-hand-drawn-shape-outline.png"></img>
+                <div>Action (set B)</div>
+            </li>
+            <li class="drawer-item-container" id="Animal (set A)">
+                <img src="assets/img/Animal.png"></img>
+                <div>Animal (set A)</div>
+            </li>
+            <li class="drawer-item-container" id="Animal (set B)">
+                <img src="assets/img/Animal.png"></img>
+                <div>Animal (set B)</div>
+            </li>
+            <li class="drawer-item-container" id="Clothes">
+                <img src="assets/img/clothes.png"></img>
+                <div>Clothes</div>
+            </li>
+            <li class="drawer-item-container" id="Emotions">
+                <img src="assets/img/smile-emoticon.png"></img>
+                <div>Emotions</div>
+            </li>
+        </ul>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="jquery-3.0.0.slim.min.js"></script>
+    <script src="bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+.content-wrapper {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.navbar, .navbar-light, .bg-light {
+    height: 60px;
+}
+
+.navbar-toggler-icon {
+    height: 35px;
+}
+
+.card-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-top: 20px;
+    width: 250px;
+    height: 270px;
+    perspective: 1000px;
+    transition: all 0.2s ease-in;
+}
+
+.img-wrapper {
+    width: 100px;
+    height: 50px;
+}
+
+.card-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card-title {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-3%);
+    cursor: pointer;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.card-body {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+card-front {
+    background: red;
+}
+  
+.card-back {
+    background: blue;
+    transform: rotateY(180deg);
+}
+
+.hidden {
+    display: none;
+}
+.score {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.score-success, .score-fail {
+    margin-right: 10px;
+}
+
+.start-game-btn {
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+.inactive {
+    opacity: 0.2;
+    pointer-events: none;
+    box-shadow: none;
+    transform: none;
+}
+
+.repeat-arrow:hover {
+    cursor: pointer;
+    transform: rotate(-90deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.d-flex {
+ gap: 5px;   
+}
+
+.game-over {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* drawer */
+#overlay {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.7);
+    z-index: 100;
+    display: none;
+}
+.drawer-menu {
+    width: 260px;
+    height: 100vh;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    transform: translateX(-320px);
+    transition: all 0.3s ease 0s;
+}
+
+.open {
+    transform: translateX(0)
+}
+
+ul {
+    list-style-type: none;
+}
+
+.drawer-item-container {
+    display: flex;
+    gap: 10px;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+
+.drawer-item-container:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#close {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#close:hover {
+    cursor: pointer;
+}
+
+.active-drawer {
+    text-decoration: underline;
+}
